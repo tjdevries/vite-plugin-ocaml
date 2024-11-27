@@ -1,0 +1,7 @@
+(melange.emit
+ (target src)
+ (libraries melange.belt melange.node)
+ (promote (until-clean))
+ (preprocess
+  (pps melange.ppx))
+ (module_systems es6))

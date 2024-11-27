@@ -1,0 +1,47 @@
+{
+  "name": "vite-plugin-ocaml",
+  "description": "Vite plugin for OCaml",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "Melange",
+    "OCaml"
+  ],
+  "author": "tjdevries",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/tjdevries/vite-plugin-ocaml",
+  "bugs": {
+    "url": "https://github.com/tjdevries/vite-plugin-ocaml/-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdelacroix/vite-plugin-melange.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs"
+  },
+  "files": [
+    "src/index.js",
+    "src/rpc.js",
+    "src/utils.js",
+    "dist/index.cjs",
+    "dist/index.mjs",
+    "rollup.config.js"
+  ],
+  "scripts": {
+    "build": "npx rollup -c",
+		"watch": "npx rollup --watch -c",
+    "prepare": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "rollup": "^2.79.2"
+  }
+}

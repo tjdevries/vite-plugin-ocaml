@@ -9,4 +9,4 @@
 (package
  (name vite-plugin-ocaml)
  (allow_empty)
- (depends ocaml dune melange)) 
+ (depends ocaml dune melange sexplib ppx_sexp_conv)) 

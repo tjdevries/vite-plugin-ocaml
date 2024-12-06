@@ -1,7 +1,7 @@
 (melange.emit
  (target src)
- (libraries melange.belt melange.node)
+ (libraries melange.belt melange.node sexplib)
  (promote (until-clean))
  (preprocess
-  (pps melange.ppx))
+  (pps melange.ppx ppx_sexp_conv))
  (module_systems es6))

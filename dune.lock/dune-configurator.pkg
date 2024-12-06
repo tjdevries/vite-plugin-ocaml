@@ -9,7 +9,7 @@
   (run rm -rf vendor/pp)
   (run dune build -p %{pkg-self:name} -j %{jobs} @install)))
 
-(depends dune ocaml)
+(depends dune ocaml base-unix csexp)
 
 (source
  (fetch
